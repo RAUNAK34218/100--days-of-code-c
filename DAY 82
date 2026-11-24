@@ -1,0 +1,16 @@
+#include <stdio.h>
+
+enum Light { RED, YELLOW, GREEN };
+
+int main() {
+    enum Light l;
+    printf("Enter light (0=RED, 1=YELLOW, 2=GREEN): ");
+    scanf("%d", (int *)&l);
+    switch (l) {
+        case RED:    printf("Stop\n"); break;
+        case YELLOW: printf("Wait\n"); break;
+        case GREEN:  printf("Go\n");   break;
+        default:     printf("Invalid\n");
+    }
+    return 0;
+}
