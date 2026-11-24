@@ -1,0 +1,13 @@
+#include <stdio.h>
+
+enum Level { LOW = 1, MEDIUM = 5, HIGH = 10 };
+
+int main() {
+    enum Level l = MEDIUM;
+    printf("LOW = %d\n", LOW);
+    printf("MEDIUM = %d\n", MEDIUM);
+    printf("HIGH = %d\n", HIGH);
+    printf("Variable l holds: %d\n", l);
+    printf("Size of enum: %zu bytes\n", sizeof(l));
+    return 0;
+}
