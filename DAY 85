@@ -1,0 +1,8 @@
+#include <stdio.h>
+
+enum Number { A = 10, B, C, D, E };
+
+int main() {
+    printf("A = %d\nB = %d\nC = %d\nD = %d\nE = %d\n", A, B, C, D, E);
+    return 0;
+}
